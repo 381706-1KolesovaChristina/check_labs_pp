@@ -62,5 +62,5 @@ int getMinDifference(const std::vector <int> Vec) {
 			}
 		}
 	}
-	return difMin; 
+  return difMin;
 }
