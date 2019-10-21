@@ -31,7 +31,7 @@ TEST(Test_close_value_vector, Test_close_value_oneElem) {
 	std::vector<int> Vec;
 	Vec = getRandomVector(1);
 	int dif = getMinDifference(Vec);
-	if(rank==0){
+	if (rank == 0) {
 		ASSERT_EQ(dif, getMinDifferenceOneProc(Vec));
 	}
 }
