@@ -42,8 +42,7 @@ int getMinDifference(const std::vector <int> Vec) {
       for (int noProc = 1; noProc < size; noProc++)
         MPI_Send(&Vec[res] + modf * noProc, modf + 1, MPI_INT, noProc, 0, MPI_COMM_WORLD);
     }
-  }
-  else {
+  } else {
     if (modf > 0) {
       std::vector<int> tmp(modf + 1);
       MPI_Recv(&tmp[0], modf + 1, MPI_INT, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
