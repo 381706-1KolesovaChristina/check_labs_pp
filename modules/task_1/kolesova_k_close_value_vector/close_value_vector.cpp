@@ -4,7 +4,7 @@
 #include <vector>
 #include <cmath>
 #include <algorithm>
-#include "./close_value_vector.h"
+#include "../../../modules/task_1/kolesova_k_close_value_vector/close_value_vector.h"
 
 std::vector<int> getRandomVector(int size) {
 	std::random_device ran;
